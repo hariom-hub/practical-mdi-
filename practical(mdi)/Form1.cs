@@ -16,7 +16,9 @@ namespace practical_mdi_
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            admin obj = new admin();
+            obj.MdiParent = this;
+            obj.Show();
         }
 
         private void registrationToolStripMenuItem_Click(object sender, EventArgs e)

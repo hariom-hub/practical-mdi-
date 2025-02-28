@@ -26,7 +26,7 @@ namespace practical_mdi_
         {
             if (radioButton1.Checked == true)
             {
-                if (textBox1.Text == "Admin" && textBox2.Text == "1234")
+                if (textBox3.Text == "Admin" && textBox2.Text == "1234")
                 {
                     MDIParent1 obj = new MDIParent1();
                     obj.Show();
@@ -59,6 +59,11 @@ namespace practical_mdi_
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

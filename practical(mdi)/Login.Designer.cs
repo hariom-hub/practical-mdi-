@@ -31,14 +31,11 @@
             label1 = new Label();
             button1 = new Button();
             radioButton1 = new RadioButton();
-            button2 = new Button();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             label2 = new Label();
             label3 = new Label();
             radioButton2 = new RadioButton();
-            button3 = new Button();
-            textBox1 = new TextBox();
             label4 = new Label();
             SuspendLayout();
             // 
@@ -54,11 +51,11 @@
             // 
             // button1
             // 
-            button1.Location = new Point(227, 299);
+            button1.Location = new Point(430, 248);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 2;
-            button1.Text = "button1";
+            button1.Text = "submit";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -72,15 +69,6 @@
             radioButton1.TabStop = true;
             radioButton1.Text = "Admin";
             radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(372, 330);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 4;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -128,23 +116,6 @@
             radioButton2.Text = "Student";
             radioButton2.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            button3.Location = new Point(495, 261);
-            button3.Name = "button3";
-            button3.Size = new Size(112, 34);
-            button3.TabIndex = 5;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(552, 330);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 31);
-            textBox1.TabIndex = 1;
-            textBox1.TextChanged += textBox1_TextChanged;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -153,6 +124,8 @@
             label4.Size = new Size(262, 25);
             label4.TabIndex = 11;
             label4.Text = "invalid username and password";
+            label4.Visible = false;
+            label4.Click += label4_Click;
             // 
             // Login
             // 
@@ -165,11 +138,8 @@
             Controls.Add(label2);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
-            Controls.Add(button3);
-            Controls.Add(button2);
             Controls.Add(radioButton1);
             Controls.Add(button1);
-            Controls.Add(textBox1);
             Controls.Add(label1);
             Name = "Login";
             Text = "Login";
@@ -183,14 +153,11 @@
         private Label label1;
         private Button button1;
         private RadioButton radioButton1;
-        private Button button2;
         private TextBox textBox2;
         private TextBox textBox3;
         private Label label2;
         private Label label3;
         private RadioButton radioButton2;
-        private Button button3;
-        private TextBox textBox1;
         private Label label4;
     }
 }
